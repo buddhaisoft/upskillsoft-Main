@@ -1,0 +1,561 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9E24AA0-8D16-45BA-870C-B4E225E77339}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>upskillsoft</RootNamespace>
+    <AssemblyName>upskillsoft</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44361</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fullwidth\404.html" />
+    <Content Include="fullwidth\about-2.html" />
+    <Content Include="fullwidth\about-3.html" />
+    <Content Include="fullwidth\about.html" />
+    <Content Include="fullwidth\Aboutus.html" />
+    <Content Include="fullwidth\AngularOnlineTraining.html" />
+    <Content Include="fullwidth\AWSOnlineTraining.html" />
+    <Content Include="fullwidth\AzureOnlineTraining.html" />
+    <Content Include="fullwidth\blog-2.html" />
+    <Content Include="fullwidth\blog-post.html" />
+    <Content Include="fullwidth\blog.html" />
+    <Content Include="fullwidth\columns.html" />
+    <Content Include="fullwidth\contact.html" />
+    <Content Include="fullwidth\contact1.html" />
+    <Content Include="fullwidth\contact2.html" />
+    <Content Include="fullwidth\contact3.html" />
+    <Content Include="fullwidth\css\Others.css" />
+    <Content Include="fullwidth\demo-contacts.php" />
+    <Content Include="fullwidth\demo-recovery.php" />
+    <Content Include="fullwidth\Demo.html" />
+    <Content Include="fullwidth\elements.html" />
+    <Content Include="fullwidth\faqs.html" />
+    <Content Include="fullwidth\full-width.html" />
+    <Content Include="fullwidth\images\accordion-ico.png" />
+    <Content Include="fullwidth\images\blog\avatar.jpg" />
+    <Content Include="fullwidth\images\blog\facebook.png" />
+    <Content Include="fullwidth\images\blog\flickr.png" />
+    <Content Include="fullwidth\images\blog\google-plus.png" />
+    <Content Include="fullwidth\images\blog\linkedin.png" />
+    <Content Include="fullwidth\images\blog\people_img.jpg" />
+    <Content Include="fullwidth\images\blog\rss.png" />
+    <Content Include="fullwidth\images\blog\twitter.png" />
+    <Content Include="fullwidth\images\blog\vimeo-logo.png" />
+    <Content Include="fullwidth\images\blog\vimeo.png" />
+    <Content Include="fullwidth\images\blog\yahoo.png" />
+    <Content Include="fullwidth\images\blog\youtube-logo.png" />
+    <Content Include="fullwidth\images\blog\youtube.png" />
+    <Content Include="fullwidth\images\client-logo1-white.png" />
+    <Content Include="fullwidth\images\client-logo1.png" />
+    <Content Include="fullwidth\images\client-logo2-white.png" />
+    <Content Include="fullwidth\images\client-logo2.png" />
+    <Content Include="fullwidth\images\client-logo3-white.png" />
+    <Content Include="fullwidth\images\client-logo3.png" />
+    <Content Include="fullwidth\images\client-logo4-white.png" />
+    <Content Include="fullwidth\images\client-logo4.png" />
+    <Content Include="fullwidth\images\client-logo5-white.png" />
+    <Content Include="fullwidth\images\client-logo5.png" />
+    <Content Include="fullwidth\images\client-logo6-white.png" />
+    <Content Include="fullwidth\images\client-logo6.png" />
+    <Content Include="fullwidth\images\client-logo7-white.png" />
+    <Content Include="fullwidth\images\client-logo7.png" />
+    <Content Include="fullwidth\images\client-logo8-white.png" />
+    <Content Include="fullwidth\images\client-logo8.png" />
+    <Content Include="fullwidth\images\client-logo9-white.png" />
+    <Content Include="fullwidth\images\client-logo9.png" />
+    <Content Include="fullwidth\images\colors\bridge\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\bridge\h-line1.png" />
+    <Content Include="fullwidth\images\colors\bridge\h-line3.png" />
+    <Content Include="fullwidth\images\colors\bridge\logo.png" />
+    <Content Include="fullwidth\images\colors\cyan\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\cyan\h-line1.png" />
+    <Content Include="fullwidth\images\colors\cyan\h-line3.png" />
+    <Content Include="fullwidth\images\colors\cyan\logo.png" />
+    <Content Include="fullwidth\images\colors\darkred\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\darkred\h-line1.png" />
+    <Content Include="fullwidth\images\colors\darkred\h-line3.png" />
+    <Content Include="fullwidth\images\colors\darkred\logo.png" />
+    <Content Include="fullwidth\images\colors\green\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\green\h-line1.png" />
+    <Content Include="fullwidth\images\colors\green\h-line3.png" />
+    <Content Include="fullwidth\images\colors\green\logo.png" />
+    <Content Include="fullwidth\images\colors\lightblue\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\lightblue\h-line1.png" />
+    <Content Include="fullwidth\images\colors\lightblue\h-line3.png" />
+    <Content Include="fullwidth\images\colors\lightblue\logo.png" />
+    <Content Include="fullwidth\images\colors\orange\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\orange\h-line1.png" />
+    <Content Include="fullwidth\images\colors\orange\h-line3.png" />
+    <Content Include="fullwidth\images\colors\orange\logo.png" />
+    <Content Include="fullwidth\images\colors\pink\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\pink\h-line1.png" />
+    <Content Include="fullwidth\images\colors\pink\h-line3.png" />
+    <Content Include="fullwidth\images\colors\pink\logo.png" />
+    <Content Include="fullwidth\images\colors\purple\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\purple\h-line1.png" />
+    <Content Include="fullwidth\images\colors\purple\h-line3.png" />
+    <Content Include="fullwidth\images\colors\purple\logo.png" />
+    <Content Include="fullwidth\images\colors\red\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\red\h-line1.png" />
+    <Content Include="fullwidth\images\colors\red\h-line3.png" />
+    <Content Include="fullwidth\images\colors\red\logo.png" />
+    <Content Include="fullwidth\images\colors\slate\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\slate\h-line1.png" />
+    <Content Include="fullwidth\images\colors\slate\h-line3.png" />
+    <Content Include="fullwidth\images\colors\slate\logo.png" />
+    <Content Include="fullwidth\images\colors\yellow\accordion-ico.png" />
+    <Content Include="fullwidth\images\colors\yellow\h-line1.png" />
+    <Content Include="fullwidth\images\colors\yellow\h-line3.png" />
+    <Content Include="fullwidth\images\colors\yellow\logo.png" />
+    <Content Include="fullwidth\images\Courses\AWSOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\AzureOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\MSBIOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\PowerBIOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\PythonOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\QlikViewOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\SQLServerOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\Courses\TableauOnlineTraining - Copy.jpg" />
+    <Content Include="fullwidth\images\Courses\TableauOnlineTraining.jpg" />
+    <Content Include="fullwidth\images\dark_matter.png" />
+    <Content Include="fullwidth\images\elements\bg.png" />
+    <Content Include="fullwidth\images\elements\dropcap_gray.png" />
+    <Content Include="fullwidth\images\elements\icon-remove.png" />
+    <Content Include="fullwidth\images\elements\pattern-small-img1.jpg" />
+    <Content Include="fullwidth\images\elements\pattern-small-img2.jpg" />
+    <Content Include="fullwidth\images\elements\pattern-small-img3.jpg" />
+    <Content Include="fullwidth\images\elements\pattern-small-img4.jpg" />
+    <Content Include="fullwidth\images\elements\pattern1.png" />
+    <Content Include="fullwidth\images\elements\pattern10.png" />
+    <Content Include="fullwidth\images\elements\pattern11.png" />
+    <Content Include="fullwidth\images\elements\pattern2.png" />
+    <Content Include="fullwidth\images\elements\pattern3.png" />
+    <Content Include="fullwidth\images\elements\pattern4.png" />
+    <Content Include="fullwidth\images\elements\pattern5.png" />
+    <Content Include="fullwidth\images\elements\pattern6.png" />
+    <Content Include="fullwidth\images\elements\pattern7.png" />
+    <Content Include="fullwidth\images\elements\pattern8.png" />
+    <Content Include="fullwidth\images\elements\pattern9.png" />
+    <Content Include="fullwidth\images\footer-graph.png" />
+    <Content Include="fullwidth\images\footer-graph2.jpg" />
+    <Content Include="fullwidth\images\footer-logo - Copy.png" />
+    <Content Include="fullwidth\images\footer-logo.png" />
+    <Content Include="fullwidth\images\footer-wmap.png" />
+    <Content Include="fullwidth\images\fullbg.jpg" />
+    <Content Include="fullwidth\images\h-line1.png" />
+    <Content Include="fullwidth\images\h-line2.png" />
+    <Content Include="fullwidth\images\h-line3.png" />
+    <Content Include="fullwidth\images\logo - Copy %282%29.png" />
+    <Content Include="fullwidth\images\logo - Copy.jpg" />
+    <Content Include="fullwidth\images\logo - Copy.png" />
+    <Content Include="fullwidth\images\logo.jpg" />
+    <Content Include="fullwidth\images\logo.png" />
+    <Content Include="fullwidth\images\logo2 - Copy.jpg" />
+    <Content Include="fullwidth\images\logo2 - Copy.png" />
+    <Content Include="fullwidth\images\logo2.jpg" />
+    <Content Include="fullwidth\images\logo2.png" />
+    <Content Include="fullwidth\images\opacity1.png" />
+    <Content Include="fullwidth\images\parallax-bg-dark.jpg" />
+    <Content Include="fullwidth\images\parallax-bg.jpg" />
+    <Content Include="fullwidth\images\parallax-bg1 - Copy.jpg" />
+    <Content Include="fullwidth\images\parallax-bg1.jpg" />
+    <Content Include="fullwidth\images\parallax-bg6.jpg" />
+    <Content Include="fullwidth\images\project1.jpg" />
+    <Content Include="fullwidth\images\sample-ad-banner.jpg" />
+    <Content Include="fullwidth\images\scroll-top-arrow.png" />
+    <Content Include="fullwidth\images\shadow.png" />
+    <Content Include="fullwidth\images\shadow2.png" />
+    <Content Include="fullwidth\images\site-icon1.png" />
+    <Content Include="fullwidth\images\site-icon2.png" />
+    <Content Include="fullwidth\images\site-icon3.png" />
+    <Content Include="fullwidth\images\site-icon4.png" />
+    <Content Include="fullwidth\images\site-img1.jpg" />
+    <Content Include="fullwidth\images\site-img10.png" />
+    <Content Include="fullwidth\images\site-img11.png" />
+    <Content Include="fullwidth\images\site-img12.jpg" />
+    <Content Include="fullwidth\images\site-img13.jpg" />
+    <Content Include="fullwidth\images\site-img14.png" />
+    <Content Include="fullwidth\images\site-img15.png" />
+    <Content Include="fullwidth\images\site-img16.png" />
+    <Content Include="fullwidth\images\site-img17.jpg" />
+    <Content Include="fullwidth\images\site-img19.png" />
+    <Content Include="fullwidth\images\site-img22-2.png" />
+    <Content Include="fullwidth\images\site-img22-3.png" />
+    <Content Include="fullwidth\images\site-img22-4.png" />
+    <Content Include="fullwidth\images\site-img22.png" />
+    <Content Include="fullwidth\images\site-img27.png" />
+    <Content Include="fullwidth\images\site-img28.png" />
+    <Content Include="fullwidth\images\site-img29.png" />
+    <Content Include="fullwidth\images\site-img30.png" />
+    <Content Include="fullwidth\images\site-img31.png" />
+    <Content Include="fullwidth\images\site-img32.jpg" />
+    <Content Include="fullwidth\images\site-img35.png" />
+    <Content Include="fullwidth\images\site-img52 - Copy.png" />
+    <Content Include="fullwidth\images\site-img52-TableauOnlineTrainingCourse.png" />
+    <Content Include="fullwidth\images\site-img52.png" />
+    <Content Include="fullwidth\images\site-img8-a.png" />
+    <Content Include="fullwidth\images\site-img8.png" />
+    <Content Include="fullwidth\images\site-img9.jpg" />
+    <Content Include="fullwidth\images\site-search-icon.png" />
+    <Content Include="fullwidth\images\site-search-menu.png" />
+    <Content Include="fullwidth\images\slider-bottom-shadow.png" />
+    <Content Include="fullwidth\images\slider-img.png" />
+    <Content Include="fullwidth\images\sliders\master\1.jpg" />
+    <Content Include="fullwidth\images\sliders\master\2.jpg" />
+    <Content Include="fullwidth\images\sliders\master\3.jpg" />
+    <Content Include="fullwidth\images\sliders\master\4.jpg" />
+    <Content Include="fullwidth\images\sliders\master\5.jpg" />
+    <Content Include="fullwidth\images\sliders\master\6.jpg" />
+    <Content Include="fullwidth\images\sliders\master\7.jpg" />
+    <Content Include="fullwidth\images\sliders\master\cover.jpg" />
+    <Content Include="fullwidth\images\sliders\master\iphone-hand.png" />
+    <Content Include="fullwidth\images\sliders\master\laptop.png" />
+    <Content Include="fullwidth\images\sliders\master\skin.png" />
+    <Content Include="fullwidth\images\sliders\master\slide1\slide1-bg.jpg" />
+    <Content Include="fullwidth\images\sliders\master\slide20\site-img13.png" />
+    <Content Include="fullwidth\images\sliders\master\slide2\slide2_img1.png" />
+    <Content Include="fullwidth\images\sliders\master\slide2\slide2_img2.png" />
+    <Content Include="fullwidth\images\sliders\master\slide4\slide4-bg.jpg" />
+    <Content Include="fullwidth\images\sliders\master\slide5\header-slider-img-2.png" />
+    <Content Include="fullwidth\images\sliders\master\video\video-bg.jpg" />
+    <Content Include="fullwidth\images\sliders\master\video\video.ogv" />
+    <Content Include="fullwidth\images\sliders\master\video\video.webm" />
+    <Content Include="fullwidth\images\spacer.gif" />
+    <Content Include="fullwidth\images\Special-Offers-Online-Training-NareshIT-1.jpg" />
+    <Content Include="fullwidth\images\t-thumb1.jpg" />
+    <Content Include="fullwidth\images\t-thumb2.jpg" />
+    <Content Include="fullwidth\images\t-thumb3.jpg" />
+    <Content Include="fullwidth\images\t-thumb4.jpg" />
+    <Content Include="fullwidth\images\tex1.jpg" />
+    <Content Include="fullwidth\images\texture-1.png" />
+    <Content Include="fullwidth\images\UpSkillSoft-CorporateTraining361x180.png" />
+    <Content Include="fullwidth\images\UpSkillSoft-OnlineTraining361x180 - Copy.png" />
+    <Content Include="fullwidth\images\UpSkillSoft-OnlineTraining361x180.png" />
+    <Content Include="fullwidth\images\UpSkillSoft-WeekendTraining361x180.png" />
+    <Content Include="fullwidth\images\v-line.png" />
+    <Content Include="fullwidth\index-1.html" />
+    <Content Include="fullwidth\index-2.html" />
+    <Content Include="fullwidth\index-3.html" />
+    <Content Include="fullwidth\Index-working2.html" />
+    <Content Include="fullwidth\index.html" />
+    <Content Include="fullwidth\index1.html" />
+    <Content Include="fullwidth\js\accordion\accordion.css" />
+    <Content Include="fullwidth\js\accordion\custom.js" />
+    <Content Include="fullwidth\js\accordion\style.css" />
+    <Content Include="fullwidth\js\animations\css\animations.css" />
+    <Content Include="fullwidth\js\animations\css\animations.min.css" />
+    <Content Include="fullwidth\js\animations\css\normalize.css" />
+    <Content Include="fullwidth\js\animations\css\style.css" />
+    <Content Include="fullwidth\js\animations\js\animations.js" />
+    <Content Include="fullwidth\js\animations\js\animations.min.js" />
+    <Content Include="fullwidth\js\animations\js\smoothscroll.js" />
+    <Content Include="fullwidth\js\carousel\custom.js" />
+    <Content Include="fullwidth\js\carousel\demo.css" />
+    <Content Include="fullwidth\js\carousel\flexslider.css" />
+    <Content Include="fullwidth\js\carousel\jquery.flexslider.js" />
+    <Content Include="fullwidth\js\carousel\jquery.jcarousel.min.js" />
+    <Content Include="fullwidth\js\carousel\next-arrow.png" />
+    <Content Include="fullwidth\js\carousel\next-horizontal-two.png" />
+    <Content Include="fullwidth\js\carousel\pre-arrow.png" />
+    <Content Include="fullwidth\js\carousel\prev-horizontal-two.png" />
+    <Content Include="fullwidth\js\carousel\skin.css" />
+    <Content Include="fullwidth\js\classyloader\jquery.classyloader.js" />
+    <Content Include="fullwidth\js\classyloader\jquery.classyloader.min.js" />
+    <Content Include="fullwidth\js\cubeportfolio\cbp-loading-popup.gif" />
+    <Content Include="fullwidth\js\cubeportfolio\cbp-loading.gif" />
+    <Content Include="fullwidth\js\cubeportfolio\cbp-sprite.png" />
+    <Content Include="fullwidth\js\cubeportfolio\cubeportfolio.min.css" />
+    <Content Include="fullwidth\js\cubeportfolio\jquery.cubeportfolio.min.js" />
+    <Content Include="fullwidth\js\cubeportfolio\main.js" />
+    <Content Include="fullwidth\js\cubeportfolio\main2.js" />
+    <Content Include="fullwidth\js\cubeportfolio\main3.js" />
+    <Content Include="fullwidth\js\cubeportfolio\main4.js" />
+    <Content Include="fullwidth\js\cubeportfolio\main5.js" />
+    <Content Include="fullwidth\js\cubeportfolio\main6.js" />
+    <Content Include="fullwidth\js\form\jquery-1.9.1.min.js" />
+    <Content Include="fullwidth\js\form\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="fullwidth\js\form\jquery.form.min.js" />
+    <Content Include="fullwidth\js\form\jquery.maskedinput.min.js" />
+    <Content Include="fullwidth\js\form\jquery.modal.js" />
+    <Content Include="fullwidth\js\form\jquery.placeholder.min.js" />
+    <Content Include="fullwidth\js\form\jquery.validate.min.js" />
+    <Content Include="fullwidth\js\form\sky-forms-ie8.js" />
+    <Content Include="fullwidth\js\form\sky-forms.css" />
+    <Content Include="fullwidth\js\lightbox\blank.gif" />
+    <Content Include="fullwidth\js\lightbox\custom.js" />
+    <Content Include="fullwidth\js\lightbox\fancybox_loading%402x.gif" />
+    <Content Include="fullwidth\js\lightbox\fancybox_loading.gif" />
+    <Content Include="fullwidth\js\lightbox\fancybox_overlay.png" />
+    <Content Include="fullwidth\js\lightbox\fancybox_sprite%402x.png" />
+    <Content Include="fullwidth\js\lightbox\fancybox_sprite.png" />
+    <Content Include="fullwidth\js\lightbox\jquery.fancybox.css" />
+    <Content Include="fullwidth\js\lightbox\jquery.fancybox.js" />
+    <Content Include="fullwidth\js\lightbox\jquery.fancybox.pack.js" />
+    <Content Include="fullwidth\js\mainmenu\bootstrap-theme.min.css" />
+    <Content Include="fullwidth\js\mainmenu\bootstrap.min.css" />
+    <Content Include="fullwidth\js\mainmenu\bootstrap.min.js" />
+    <Content Include="fullwidth\js\mainmenu\customeUI.js" />
+    <Content Include="fullwidth\js\mainmenu\demo.css" />
+    <Content Include="fullwidth\js\mainmenu\menu.css" />
+    <Content Include="fullwidth\js\mainmenu\modernizr.custom.75180.js" />
+    <Content Include="fullwidth\js\mainmenu\sticky.css" />
+    <Content Include="fullwidth\js\mainmenu\sticky.js" />
+    <Content Include="fullwidth\js\mainmenu\stickytwo.css" />
+    <Content Include="fullwidth\js\masterslider\blank.gif" />
+    <Content Include="fullwidth\js\masterslider\jquery-1.10.2.min.js" />
+    <Content Include="fullwidth\js\masterslider\jquery.easing.min.js" />
+    <Content Include="fullwidth\js\masterslider\masterslider.flickr.min.js" />
+    <Content Include="fullwidth\js\masterslider\masterslider.min.js" />
+    <Content Include="fullwidth\js\masterslider\modal.png" />
+    <Content Include="fullwidth\js\masterslider\ms-laptop-style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\black-1\black-skin-1-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\black-1\black-skin-1.png" />
+    <Content Include="fullwidth\js\masterslider\skins\black-1\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\black-2\black-skin-2-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\black-2\black-skin-2.png" />
+    <Content Include="fullwidth\js\masterslider\skins\black-2\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\contrast\contrast-skin-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\contrast\contrast-skin.png" />
+    <Content Include="fullwidth\js\masterslider\skins\contrast\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\default\light-skin-1-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\default\light-skin-1.png" />
+    <Content Include="fullwidth\js\masterslider\skins\default\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\light-2\light-skin-2-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-2\light-skin-2.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-2\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\light-3\light-skin-3-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-3\light-skin-3.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-3\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\light-4\light-skin-4-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-4\light-skin-4.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-4\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\light-5\light-skin-5-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-5\light-skin-5.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-5\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\light-6\light-skin-6-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-6\light-skin-6.png" />
+    <Content Include="fullwidth\js\masterslider\skins\light-6\style.css" />
+    <Content Include="fullwidth\js\masterslider\skins\metro\metro-skin-retina.png" />
+    <Content Include="fullwidth\js\masterslider\skins\metro\metro-skin.png" />
+    <Content Include="fullwidth\js\masterslider\skins\metro\style.css" />
+    <Content Include="fullwidth\js\masterslider\slide1-bg.jpg" />
+    <Content Include="fullwidth\js\masterslider\style.css" />
+    <Content Include="fullwidth\js\masterslider\style\arrows.png" />
+    <Content Include="fullwidth\js\masterslider\style\grab.cur" />
+    <Content Include="fullwidth\js\masterslider\style\grab.png" />
+    <Content Include="fullwidth\js\masterslider\style\grabbing.cur" />
+    <Content Include="fullwidth\js\masterslider\style\grabbing.png" />
+    <Content Include="fullwidth\js\masterslider\style\loading-1-dark.gif" />
+    <Content Include="fullwidth\js\masterslider\style\loading-1-light.gif" />
+    <Content Include="fullwidth\js\masterslider\style\loading-1.gif" />
+    <Content Include="fullwidth\js\masterslider\style\loading-2-dark.gif" />
+    <Content Include="fullwidth\js\masterslider\style\loading-2-light.gif" />
+    <Content Include="fullwidth\js\masterslider\style\loading-2.gif" />
+    <Content Include="fullwidth\js\masterslider\style\masterslider.css" />
+    <Content Include="fullwidth\js\masterslider\style\ms-staff-style.css" />
+    <Content Include="fullwidth\js\masterslider\style\sicons.png" />
+    <Content Include="fullwidth\js\masterslider\style\video-close-btn.png" />
+    <Content Include="fullwidth\js\progressbar\progress.js" />
+    <Content Include="fullwidth\js\progressbar\ui.progress-bar.css" />
+    <Content Include="fullwidth\js\scrolltotop\totop.js" />
+    <Content Include="fullwidth\js\slidepanel\close.png" />
+    <Content Include="fullwidth\js\slidepanel\open.png" />
+    <Content Include="fullwidth\js\slidepanel\slidepanel.css" />
+    <Content Include="fullwidth\js\slidepanel\slidepanel.js" />
+    <Content Include="fullwidth\js\style-switcher\colors-swi.png" />
+    <Content Include="fullwidth\js\style-switcher\jquery-1.js" />
+    <Content Include="fullwidth\js\style-switcher\styleselector.js" />
+    <Content Include="fullwidth\js\style-switcher\styleswitcher.js" />
+    <Content Include="fullwidth\js\tabs\assets\css\responsive-tabs.css" />
+    <Content Include="fullwidth\js\tabs\assets\css\responsive-tabs2.css" />
+    <Content Include="fullwidth\js\tabs\assets\css\responsive-tabs3.css" />
+    <Content Include="fullwidth\js\tabs\assets\js\responsive-tabs.js" />
+    <Content Include="fullwidth\js\tabs\assets\js\responsive-tabs.min.js" />
+    <Content Include="fullwidth\js\tabs\assets\js\scripts.js" />
+    <Content Include="fullwidth\js\tabs\assets\js\smoothscroll.js" />
+    <Content Include="fullwidth\js\tabs\tabwidget\tabwidget.css" />
+    <Content Include="fullwidth\js\tabs\tabwidget\tabwidget.js" />
+    <Content Include="fullwidth\js\universal\jquery.js" />
+    <Content Include="fullwidth\left-nav.html" />
+    <Content Include="fullwidth\left-sidebar.html" />
+    <Content Include="fullwidth\login.html" />
+    <Content Include="fullwidth\MSBIOnlineTraining.html" />
+    <Content Include="fullwidth\OnlineTraining.html" />
+    <Content Include="fullwidth\portfolio-five.html" />
+    <Content Include="fullwidth\portfolio-four.html" />
+    <Content Include="fullwidth\portfolio-one.html" />
+    <Content Include="fullwidth\portfolio-seven.html" />
+    <Content Include="fullwidth\portfolio-six.html" />
+    <Content Include="fullwidth\portfolio-three.html" />
+    <Content Include="fullwidth\portfolio-two.html" />
+    <Content Include="fullwidth\PowerBIOnlineTraining.html" />
+    <Content Include="fullwidth\pricing-tables.html" />
+    <Content Include="fullwidth\PythonOnlineTraining.html" />
+    <Content Include="fullwidth\QlikViewOnlineTraining.html" />
+    <Content Include="fullwidth\register.html" />
+    <Content Include="fullwidth\right-nav.html" />
+    <Content Include="fullwidth\right-sidebar.html" />
+    <Content Include="fullwidth\services-2.html" />
+    <Content Include="fullwidth\services-3.html" />
+    <Content Include="fullwidth\services.html" />
+    <Content Include="fullwidth\SQLOnlineTraining.html" />
+    <Content Include="fullwidth\TableauOnlineTraining.html" />
+    <Content Include="fullwidth\tabs.html" />
+    <Content Include="fullwidth\team.html" />
+    <Content Include="fullwidth\Training.html" />
+    <Content Include="fullwidth\typography.html" />
+    <Content Include="fullwidth\WebForm1.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fullwidth\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fullwidth\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fullwidth\js\masterslider\masterslider.map" />
+    <Content Include="fullwidth\js\masterslider\modal.psd" />
+    <Content Include="fullwidth\js\masterslider\slide1-bg.psd" />
+    <Content Include="fullwidth\images\Courses\AWSOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\AzureOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\MSBIOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\PowerBIOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\PythonOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\QlikViewOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\SQLServerOnlineTraining.psd" />
+    <Content Include="fullwidth\images\Courses\TableauOnlineTraining - Copy.psd" />
+    <Content Include="fullwidth\images\Courses\TableauOnlineTraining.psd" />
+    <Content Include="fullwidth\images\footer-logo.psd" />
+    <Content Include="fullwidth\images\logo - Copy.psd" />
+    <Content Include="fullwidth\images\logo.psd" />
+    <Content Include="fullwidth\images\logo2 - Copy.psd" />
+    <Content Include="fullwidth\images\logo2.psd" />
+    <Content Include="fullwidth\images\site-img1.psd" />
+    <Content Include="fullwidth\images\site-img52-TableauOnlineTrainingCourse.psd" />
+    <Content Include="fullwidth\images\site-img8-a.psd" />
+    <Content Include="fullwidth\images\sliders\master\slide1\slide1-bg.psd" />
+    <Content Include="fullwidth\images\sliders\master\slide4\slide4-bg.psd" />
+    <Content Include="fullwidth\images\UpSkillSoft-CorporateTraining361x180.psd" />
+    <Content Include="fullwidth\images\UpSkillSoft-OnlineTraining361x180.psd" />
+    <Content Include="fullwidth\images\UpSkillSoft-WeekendTraining361x180.psd" />
+    <Content Include="fullwidth\.vs\fullwidth\config\applicationhost.config" />
+    <Content Include="fullwidth\.vs\slnx.sqlite" />
+    <Content Include="fullwidth\.vs\VSWorkspaceState.json" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fullwidth\.vs\fullwidth\v16\" />
+    <Folder Include="fullwidth\images\media\" />
+    <Folder Include="fullwidth\images\sliders\master\slide18\" />
+    <Folder Include="fullwidth\images\sliders\master\slide19\" />
+    <Folder Include="fullwidth\images\sliders\master\slide21\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49180</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44361/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
