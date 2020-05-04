@@ -79,8 +79,7 @@
     <Content Include="fullwidth\blog-post.html" />
     <Content Include="fullwidth\blog.html" />
     <Content Include="fullwidth\columns.html" />
-    <Content Include="fullwidth\Contact.html" />
-    <Content Include="fullwidth\contact6.html" />
+    <Content Include="fullwidth\contact.html" />
     <Content Include="fullwidth\contact1.html" />
     <Content Include="fullwidth\contact2.html" />
     <Content Include="fullwidth\contact3.html" />
