@@ -516,37 +516,46 @@
                                         <label class="label">Name</label>
                                         <label class="input">
                                             <i class="icon-append icon-user"></i>
-                                            <input type="text" name="name" id="name">
+                                            <input type="text" name="entry.2060477840" id="name">
                                         </label>
                                     </section>
                                     <section class="col col-6">
                                         <label class="label">E-mail</label>
                                         <label class="input">
                                             <i class="icon-append icon-envelope-alt"></i>
-                                            <input type="email" name="email" id="email">
+                                            <input type="email" name="entry.185645348" id="email">
                                         </label>
                                     </section>
+                                    <section class="col col-6">
+                                        <label class="label">Mobile</label>
+                                        <label class="input">
+                                            <i class="icon-append icon-envelope-alt"></i>
+                                            <input type="email" name="entry.1962110078" id="email">
+                                        </label>
+                                    </section>
+
                                 </div>
+
                                 <section>
                                     <label class="label">Subject</label>
                                     <label class="input">
                                         <i class="icon-append icon-tag"></i>
-                                        <input type="text" name="subject" id="subject">
+                                        <input type="text" name="entry.847090461" id="subject">
                                     </label>
                                 </section>
                                 <section>
                                     <label class="label">Message</label>
                                     <label class="textarea">
                                         <i class="icon-append icon-comment"></i>
-                                        <textarea rows="4" name="message" id="message"></textarea>
+                                        <textarea rows="4" name="entry.628472468" id="message"></textarea>
                                     </label>
                                 </section>
-                                <section>
+                                <!--<section>
                                     <label class="checkbox">
                                         <input type="checkbox" name="copy" id="copy">
                                         <i></i>Send a copy to my e-mail address
                                     </label>
-                                </section>
+                                </section>-->
                             </fieldset>
                             <footer>
                                 <button type="submit" class="button">Send message</button>
@@ -575,12 +584,12 @@
                         <h4>Company <strong>Address</strong></h4>
                         <ul>
                             <li>
-                                <strong>Company Name</strong><br />
+                                <strong>UpSkillSpoft</strong><br />
                                 2901 Marmora Road, Glassgow, Seattle, WA 98122-1090<br />
-                                Telephone: +1 1234-567-89000<br />
-                                FAX: +1 0123-4567-8900<br />
-                                E-mail: <a href="mailto:mail@companyname.com">mail@companyname.com</a><br />
-                                Website: <a href="index.html">www.yoursitename.com</a>
+                                <!--Telephone: +1 1234-567-89000<br />
+                                FAX: +1 0123-4567-8900<br />-->
+                                E-mail: <a href="mailto:info@upskillsoft.com">info@upskillsoft.com</a><br />
+                                Website: <a href="index.html">www.upskillsoft.com</a>
                             </li>
                         </ul>
 
@@ -592,12 +601,12 @@
                         <h4>Company <strong>Address Two</strong></h4>
                         <ul>
                             <li>
-                                <strong>Company Name</strong><br />
-                                2901 Marmora Road, Glassgow, Seattle, WA 98122-1090<br />
-                                Telephone: +1 1234-567-89000<br />
-                                FAX: +1 0123-4567-8900<br />
-                                E-mail: <a href="mailto:mail@companyname.com">mail@companyname.com</a><br />
-                                Website: <a href="index.html">www.yoursitename.com</a>
+                                <strong>UpSkillSoft</strong><br />
+                                Opp. Cyber Towers, Hi-Tech City, Hyderabad, Telangana 500081<br />
+                                Telephone: +91-7799895236<br />
+                                <!--FAX: +1 0123-4567-8900<br />-->
+                                E-mail: <a href="mailto:info@upskillsoft.com">info@upskillsoft.com</a><br />
+                                Website: <a href="index.html">www.upskillsoft.com</a>
                             </li>
                         </ul>
 
@@ -773,14 +782,14 @@
 
     <!-- jquery jcarousel -->
     <script type="text/javascript">
-(function($) {
- "use strict";
+        (function ($) {
+            "use strict";
 
-	jQuery(document).ready(function() {
-			jQuery('#mycarouselthree').jcarousel();
-	});
+            jQuery(document).ready(function () {
+                jQuery('#mycarouselthree').jcarousel();
+            });
 
-})(jQuery);
+        })(jQuery);
     </script>
 
 
@@ -794,73 +803,150 @@
     <script src="js/form/jquery.form.min.js"></script>
     <script src="js/form/jquery.validate.min.js"></script>
     <script type="text/javascript">
-(function($) {
- "use strict";
+        (function ($) {
+            "use strict";
 
-	$(function()
-	{
-		// Validation
-		$("#sky-form").validate(
-		{
-			// Rules for form validation
-			rules:
-			{
-				name:
-				{
-					required: true
-				},
-				email:
-				{
-					required: true,
-					email: true
-				},
-				message:
-				{
-					required: true,
-					minlength: 10
-				}
-			},
+            $(function () {
+                // Validation
+                $("#sky-form").validate(
+                    {
+                        // Rules for form validation
+                        rules:
+                        {
+                            name:
+                            {
+                                required: true
+                            },
+                            email:
+                            {
+                                required: true,
+                                email: true
+                            },
+                            message:
+                            {
+                                required: true,
+                                minlength: 10
+                            }
+                        },
 
-			// Messages for form validation
-			messages:
-			{
-				name:
-				{
-					required: 'Please enter your name',
-				},
-				email:
-				{
-					required: 'Please enter your email address',
-					email: 'Please enter a VALID email address'
-				},
-				message:
-				{
-					required: 'Please enter your message'
-				}
-			},
+                        // Messages for form validation
+                        messages:
+                        {
+                            name:
+                            {
+                                required: 'Please enter your name',
+                            },
+                            email:
+                            {
+                                required: 'Please enter your email address',
+                                email: 'Please enter a VALID email address'
+                            },
+                            message:
+                            {
+                                required: 'Please enter your message'
+                            }
+                        },
 
-			// Ajax form submition
-			submitHandler: function(form)
-			{
-				$(form).ajaxSubmit(
-				{
-					success: function()
-					{
-						$("#sky-form").addClass('submited');
-					}
-				});
-			},
+                        // Ajax form submition
+                        submitHandler: function (form) {
+                            $(form).ajaxSubmit(
+                                {
+                                    success: function () {
+                                        $("#sky-form").addClass('submited');
+                                    }
+                                });
+                        },
 
-			// Do not change code below
-			errorPlacement: function(error, element)
-			{
-				error.insertAfter(element.parent());
-			}
-		});
-	});
+                        // Do not change code below
+                        errorPlacement: function (error, element) {
+                            error.insertAfter(element.parent());
+                        }
+                    });
+            });
 
-})(jQuery);
+        })(jQuery);
+
+
     </script>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function postToGoogle() {
+            var field1 = $("#name").val();
+            var field2 = $("#email").val();
+            var field3 = $("#mobile").val();
+            var field4 = $("#subject").text();
+            var field5 = $("#message").text();
+            if (field1 == "") {
+                alert('Please Fill Your Name');
+                document.getElementById("name").focus();
+                return false;
+            }
+            if (field2 == "") {
+                alert('Please Fill Your Email');
+                document.getElementById("email").focus();
+                return false;
+            }
+            if (field3 == "" || field3.length > 10 || field3.length < 10) {
+                alert('Please Fill Your Mobile Number');
+                document.getElementById("mobile").focus();
+                return false;
+            }
+            if (field4 == "" || field4.length > 10 || field4.length < 10) {
+                alert('Please Fill Your Course');
+                document.getElementById("subject").focus();
+                return false;
+            }
+            if (field3 == "" || field3.length > 10 || field3.length < 10) {
+                alert('Please Fill Your Mobile Number');
+                document.getElementById("mobile").focus();
+                return false;
+            }
+
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSfwwr_thxplsWYLLkeH1KiyId5KKvTDSfNnzPd3HTJm0Ee-lg/formResponse?",
+                data: { "entry.2060477840": field1, "entry.185645348": field2, "entry.1962110078": field3, "entry.847090461": field4 ,"entry.847090461": field5},
+                type: "POST",
+                dataType: "xml",
+                success: function (d) {
+                },
+                error: function (x, y, z) {
+
+                    $('#success-msg').show();
+                    $('#form').hide();
+
+                }
+            });
+            return false;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- cubeportfolio -->
     <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
